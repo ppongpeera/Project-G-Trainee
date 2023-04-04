@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crud.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <title>Create Activity</title>
+</head>
+<body>
+    <div class="page-container">
+        <section class="left-side">
+            <div class="text-activity">
+                <h2>Activity</h2>
+            </div>
+
+            <div class="profile">
+                <img src="./image/insert.png" alt="">
+                <h2>Fname Lname</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+
+            <div class="complete">
+                <img src="./image/insert.png" alt="">
+            </div>
+
+        </section>
+
+        <section class="right-side">
+            <div class="text-welcome">
+                <h2>Welcome, Jennie</h2>
+            </div>
+            <div class="card-container">
+                <div class="card-top">
+                    <div class="card-left">
+                        <div class="add-image">
+                            <img src="./image/insert.png" alt="">
+                        </div>
+                        <div class="name">
+                            <label for="name">Activity Name</label>
+                            <input type="text" class="fill">
+                        </div>
+                        <div class="duration">
+                            <label for="duration">Activity Duration</label>
+                            <input type="number" class="fill">
+                        </div>
+                    </div>
+
+                    <div class="card-right">
+                        <!-- <div class="type">
+                            <label for="type">Activity Type</label>
+                            <input type="text" class="fill">
+                        </div> -->
+                        <div class="type">
+                            <label for="type">Activity Type</label>
+                            <select name="act-type" id="act-type">
+                                <option value="Running">Running</option>
+                                <option value="Swimming">Swimming</option>
+                                <option value="Hiking">Hiking</option>
+                                <option value="Yoga">Yoga</option>
+                                <option value="Sports">Sports</option>
+                            </select>
+                        </div>
+                        
+                        <div class="date">
+                            <label for="date">Date</label>
+                            <input type="date" class="fill">    
+                        </div>
+                        <div class="weight">
+                            <label for="weight">Your Weight (kg)</label>
+                            <input type="number" class="fill">    
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-description">
+                    <label for="weight">Describe your journal</label>
+                    <input type="text" class="fill">    
+                </div>
+
+                <div class="card-buttons">
+                    <button class="cancel">Cancel</button>
+                    <button class="add">Add</button>
+                </div>
+            </div>
+
+        </section>
+
+
+    </div>
+</body>
+</html>
